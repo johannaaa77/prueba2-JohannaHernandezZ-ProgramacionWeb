@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rick and Morty Characters</title>
+    <style>
+      /* body {
+        background-image: url(https://www.todofondos.net/wp-content/uploads/24-fondos-de-pantalla-de-rick-and-morty-portal-wallpaperboat.-wallpaper-hd-1080p-de-rick-y-morty-768x432.jpg);
+      } */
+            /* Estilos de la cuadrícula */
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel= "stylesheet" href="style.css"></link>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+          <img src="img/rick-and-morty-icon-4.jpg" alt="Logo" width="65" height="54" class="d-inline-block align-text-top">
+          <strong><a id="apiram">API Rick and Morty</a></strong>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Personajes</a>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Contáctanos</a>
+                  </li>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <div class="row mt-5 justify-content-center">
+    <div class="col-md-6 w-50">
+      <b><label for="" style="color: indigo; text-shadow: 30;">Ingrese el nombre de algún personaje</label></b>
+      <div class="search">
+        <input type="text" id="search-input" placeholder="Buscar personaje..." class="form-control w-75">
+        <button id="search-button" class="btn btn-outline-success w-75 mt-3 mb-3 p-3 border border-success">Buscar personaje</button>
+      </div>
+    </div>
+  </div>
+    <div class="grid w-75 mt-3 mb-3 card-desk" ></div>
+    <div class="pagination">
+      <button id="prev" class="btn btn-outline-success w-75 mt-3 mb-3 p-3 border border-success">Anterior</button>
+      <button id="next" class="btn btn-outline-success w-75 mt-3 mb-3 p-3 border border-success">Siguiente</button>
+      
+    </div>
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Manténte activo en nuestras redes sociales:</span>
+        </div>
+        <!-- Left -->
+    
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+    
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-secondary"></i>Rick and Morty SA
+              </h6>
+              <p>
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Productos
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Poleras de Rick and Morty</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Stickers de Rick and Morty</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Chapitas de Rick and Morty</a>
+              </p>
+
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Rick and Morty Land</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Rick and Morty Creepy Pastas</a>
+              </p>
+
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3 text-secondary"></i> La Florida, Santiago, Chile</p>
+              <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                info@gatitos.com
+              </p>
+              <p><i class="fas fa-phone me-3 text-secondary"></i> + 56 228 590 47</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="https://www.adultswim.com/videos/rick-and-morty">rick-and-morty.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

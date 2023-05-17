@@ -1,0 +1,30 @@
+.search-button{
+    align-items: center;
+}
+
+
+body {
+    background-image: url("img/fondo_ram.jpg");
+
+   }
+
+#apiram{
+    color: green;
+}
+
+#tarjeta{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#conjuntoTarjetas{
+    display: flex;
+  justify-content: center;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+    background: green;
+    color: #fff;
+}
